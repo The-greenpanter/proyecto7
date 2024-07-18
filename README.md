@@ -1,8 +1,7 @@
-# React + Vite
+# Redux Tutorial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a general React app that use Redux, for it was use JSX.
 
-Currently, two official plugins are available:
+## Funcitons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This App, counts positive an negative, also store a user name an printed on screen
