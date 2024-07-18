@@ -1,6 +1,20 @@
-
+import { useDispatch, useSelector } from "react-redux";
+import { setName} from '../redux/slice';
 export const User = () => {
+  const name = useSelector((state)=>state.user.name);
+  const dispatch = useDispatch();
+  const handleSetName = () =>{
+    const newName = prompt("Digita tu Nombre");
+    dispatch(setName(newName));
+  }
   return (
-    <div>User</div>
+    <div>
+      <h1>
+      User:{name}
+      </h1>
+      <div className="my-4">
+        <button onClick={handleSetName}> Assign Name</button>
+      </div>
+      </div>
   )
 }
